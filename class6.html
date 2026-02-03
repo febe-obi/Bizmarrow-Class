@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: red;
+        }
+        div span{
+            color: blue;
+        }
+        .table1{
+            width: 80%;
+            border: 3px solid #001;
+            border-collapse: collapse;
+        }
+        .table1 th, .table1 td{
+            border: 1.3px solid #001;
+            padding: 8px;
+        }
+        .table1 th{
+            background: #001;
+            color: aliceblue;
+            padding: 10px 0;
+        }
+
+        .box{
+            width: 120px;
+            height: 120px;
+            border: #001 solid 2px;
+            background-image:url(pic1.jpeg);
+            background-size: cover;
+            background-repeat: repeat;
+            background-size: contain;
+            margin: 30px 10px;
+        }
+        .square{
+            width: 100px;
+            height: 100px;
+            background: white;
+            border: 2px solid #000;
+            margin: 20px 0;
+            transition: 0.3s ;
+        }
+
+        .square:hover{
+            background: black;
+            border-radius: 50%;
+        }
+
+        .T2{
+            width: 60%;
+            border: 0;
+            border-collapse: collapse;
+            background: orange;
+        }
+        .T2 th, .T2 td{
+            border: 0;
+            padding: 6px;
+        }
+
+        .T2 tr:nth-child(even){
+            background: orangered;
+        }
+        .T2tr:hover{
+            background: yellowgreen;
+            color: #fff;
+        }
+        .b1{
+            color: white;
+            background: green;
+            border: 2px solid #001;
+            padding: 10px 20px;
+            border-radius: 30px; 
+        }
+
+        .b1:hover{
+            background: transparent;
+            color: purple;
+            border: purple solid 2px;
+        }
+
+        .b2{
+            color: white;
+            background:linear-gradient(to bottom right, red, blue);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 10px; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div></div>
+        <p class="demo"></p>
+        <p id="demo"></p>
+    </div>
+
+    <!--  -->
+    <div class="mydiv">
+        Lorem, ipsum dolor.
+        <span> Lorem ipsum dolor sit amet. </span>
+        <p> Lorem, ipsum. </p>
+        <h1> Welcome </h1>
+    </div>
+    <span> Lorem, ipsum dolor. </span>
+
+    <!-- table example -->
+    <table class="table1">
+             <tr>
+                    <th> # </th>
+                    <th> Name </th>
+                    <th> Code </th>
+            </tr>
+            <tr>
+              <td>01</td>  
+              <td>Febe</td>  
+              <td>3111</td>
+            </tr>   
+            <tr>
+              <td>02</td>  
+              <td>Ifunanya</td>  
+              <td>3112</td>
+            </tr>   
+            <tr>
+              <td>03</td>  
+              <td>Mayor</td>  
+              <td>3113</td>
+            </tr>   
+            <tr>
+              <td>04</td>  
+              <td>Chimamaka</td>  
+              <td>3114</td>
+            </tr>   
+            <tr>
+              <td>05</td>  
+              <td>Aka</td>  
+              <td>3115</td>
+            </tr>  
+    </table>
+    
+    
+    <!-- image background -->
+     <div class="box"></div>
+
+     <!-- Exercise -->
+      1. Create 2 buttons
+      2. a small square
+      3. A table
+
+
+    <button class="b1"> Click </button>
+    <button class="b2"> Submit </button>
+
+    <div class="square"></div>
+
+    <table class="T2">
+        <tr>
+            <th> s/n </th>
+            <th> First Name </th>
+            <th> Last Name </th>
+        </tr>
+        <tr>
+            <td> 01 </td>
+            <td> Somto </td>
+            <td> Adigwe </td>
+        </tr>
+        <tr>
+            <td> 02 </td>
+            <td> Nonso </td>
+            <td> Ugwu </td>
+        </tr>
+        <tr>
+            <td> 03 </td>
+            <td> Smith </td>
+            <td> Johnson </td>
+        </tr>
+    </table>
+</body>
+</html>
